@@ -1,0 +1,48 @@
+.app-container {
+  display: grid;
+  place-items: center;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10vw;
+    font-size: clamp(2.2em, 2.8em, 8vw);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-size: clamp(1rem, 1.5rem, 10vw);
+    scroll-snap-align: center;
+
+    p {
+      height: 80;
+      padding: 1em 10%;
+      text-align: center;
+    }
+  }
+
+  .intersected {
+    transition: all 1s;
+    opacity: 1;
+  }
+
+  .initial {
+    opacity: 0;
+    transform: translateY(3em);
+    filter: blur(5px);
+  }
+
+  .firstSection {
+    background: linear-gradient(to bottom, black, rgb(64, 64, 64));
+  }
+
+  .secondSection {
+    background: linear-gradient(to bottom, beige, white);
+    color: rgb(0, 0, 0);
+  }
+}
