@@ -1,0 +1,43 @@
+$primary: #00aee6;
+
+.nav-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.278);
+
+  backdrop-filter: invert(0);
+  mix-blend-mode: difference;
+
+  main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+
+    img {
+      height: 4rem;
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        padding-inline: 1rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+        }
+
+        a:hover {
+          color: $primary;
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+}
